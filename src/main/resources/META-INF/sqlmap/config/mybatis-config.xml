@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    
+    <typeAliases>
+		<typeAlias type="com.tj.top.dto.Master" alias="Master"/>
+		<typeAlias type="com.tj.top.dto.Board" alias="Board"/>
+		<typeAlias type="com.tj.top.dto.Customer" alias="Customer"/>
+		<typeAlias type="com.tj.top.dto.Event" alias="Event"/>
+		<typeAlias type="com.tj.top.dto.Notice" alias="Notice"/>
+		<typeAlias type="com.tj.top.dto.Product" alias="Product"/>
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="META-INF/sqlmap/mappers/master.xml"/>
+		<mapper resource="META-INF/sqlmap/mappers/board.xml"/>
+		<mapper resource="META-INF/sqlmap/mappers/customer.xml"/>
+		<mapper resource="META-INF/sqlmap/mappers/event.xml"/>
+		<mapper resource="META-INF/sqlmap/mappers/notice.xml"/>
+		<mapper resource="META-INF/sqlmap/mappers/product.xml"/>
+	</mappers>
+	
+</configuration>
